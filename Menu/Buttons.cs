@@ -10,7 +10,7 @@ namespace eyerockreborn.Menu
         public static ButtonInfo[][] buttons = new ButtonInfo[][]
         {
             new ButtonInfo[] { // Main Mods
-                new ButtonInfo { buttonText = "LEAVE", method =() => Saftey.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
+                new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
                 new ButtonInfo { buttonText = "Movement", isTogglable = false},
                 new ButtonInfo { buttonText = "unsticky Plats", method =() => Platforms.PlatformsMod(), toolTip = "Use Left and right triggers to Spawn platforms", isTogglable = true},
                 new ButtonInfo { buttonText = "Speedboost", method =() => SpeedBoost.speedboost(), toolTip = "speedbust", isTogglable = true},
@@ -18,14 +18,20 @@ namespace eyerockreborn.Menu
                 new ButtonInfo { buttonText = "Low Gravity", method =() => GravityMods.ToggleLowGravity(),toolTip = "Monkes on da Moon!", isTogglable=true},
                 new ButtonInfo { buttonText = "Super Monke [A]", method =() => SuperMonke.Flymonke(), toolTip = "fly with A", isTogglable = true},
                 new ButtonInfo { buttonText = "Super Monke [T]", method =() => SuperMonke.FlymonkeT(), toolTip = "Fly with your trigger", isTogglable = true},
-                new ButtonInfo { buttonText = "LEAVE", method =() => Saftey.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
+                new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
                 new ButtonInfo { buttonText = "Rig Mods", isTogglable = false},
-                new ButtonInfo { buttonText = "Ghost Monke", method =() => Rig.ghost(), toolTip = "Enables ghost monke", isTogglable = true},
+                new ButtonInfo { buttonText = "Ghost Monke [T]", method =() => Rig.ghost(), toolTip = "Enables ghost monke", isTogglable = true},
                 new ButtonInfo { buttonText = "Hold Rig", method =() => Rig.Grabrig(), toolTip = "allows you to hold your rig", isTogglable = true},
                 new ButtonInfo { buttonText = "Join Code", isTogglable = false},
                 new ButtonInfo { buttonText = "Join Room MODS", method =() => JoinRoom.JoinCodeMODS(), toolTip = "Joining...", isTogglable = false},
                 new ButtonInfo { buttonText = "Join Room MOD", method =() => JoinRoom.JoinCodeMOD(), toolTip = "Joining...", isTogglable = false},
                 new ButtonInfo { buttonText = "Join Random Pub", method =() => JoinRoom.JoinRandom(), toolTip  = "Joining...", isTogglable =false},
+                new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
+                new ButtonInfo { buttonText = "Safety", isTogglable = false},
+                new ButtonInfo { buttonText = "AntiReport [DC]", method =() => Safety.AntiReport(), toolTip = "Disconnects you when someone attempts to report you", isTogglable = true},
+                new ButtonInfo { buttonText = "Fake Quest Menu [A]", method =() => Safety.QuestMenu(), toolTip = "press A to activate fake quest menu", isTogglable = true},
+
+
             },
 
             new ButtonInfo[] { // Settings

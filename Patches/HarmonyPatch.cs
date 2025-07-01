@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using eyerockreborn;
 using HarmonyLib;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ namespace eyerock.Patches
             {
                 if (instance == null)
                 {
-                    instance = new Harmony(eyerock.PluginInfo.GUID);
+                    instance = new Harmony(PluginInfo.GUID);
                 }
                 instance.PatchAll(Assembly.GetExecutingAssembly());
                 IsPatched = true;

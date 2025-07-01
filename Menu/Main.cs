@@ -10,6 +10,7 @@ using UnityEngine.UI;
 using static eyerockreborn.Menu.Buttons;
 using static eyerock.Settings;
 using eyerockreborn.Menu;
+using eyerockreborn;
 
 namespace eyerock.Menu
 {
