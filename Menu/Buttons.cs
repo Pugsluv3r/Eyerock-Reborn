@@ -29,7 +29,7 @@ namespace eyerockreborn.Menu
                 new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
                 new ButtonInfo { buttonText = "Safety", isTogglable = false},
                 new ButtonInfo { buttonText = "AntiReport [DC]", method =() => Safety.AntiReport(), toolTip = "Disconnects you when someone attempts to report you", isTogglable = true},
-                new ButtonInfo { buttonText = "Fake Quest Menu [A]", method =() => Safety.QuestMenu(), toolTip = "press A to activate fake quest menu", isTogglable = true},
+                new ButtonInfo { buttonText = "Fake Quest Menu [X]", method =() => Safety.QuestMenu(), toolTip = "press A to activate fake quest menu", isTogglable = true},
 
 
             },

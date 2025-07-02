@@ -18,7 +18,7 @@ namespace eyerockreborn.Mods
 
             if (PrimaryR)
             {
-                GTPlayer.Instance.transform.position += GorillaTagger.Instance.headCollider.transform.forward * Time.deltaTime * 20f;
+                GTPlayer.Instance.transform.position += GorillaTagger.Instance.headCollider.transform.forward * Time.deltaTime * 10f;
                 GorillaTagger.Instance.rigidbody.velocity = Vector3.zero;
             }
         }
@@ -31,7 +31,7 @@ namespace eyerockreborn.Mods
 
             if (TriggerR)
             {
-                GTPlayer.Instance.transform.position += GorillaTagger.Instance.headCollider.transform.forward * Time.deltaTime * 20f;
+                GTPlayer.Instance.transform.position += GorillaTagger.Instance.headCollider.transform.forward * Time.deltaTime * 10f;
                 GorillaTagger.Instance.rigidbody.velocity = Vector3.zero;
 
             }

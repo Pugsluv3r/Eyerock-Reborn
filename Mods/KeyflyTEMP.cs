@@ -58,7 +58,7 @@ namespace eyerockreborn.Mods
                 startY = -1;
             }
 
-            float speed = 15f;
+            float speed = 10f;
             if (UnityInput.Current.GetKey(KeyCode.LeftShift))
                 speed *= 2f;
 
