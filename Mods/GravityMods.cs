@@ -8,22 +8,28 @@ namespace eyerockreborn.Mods
     internal class GravityMods
     {
         private static bool lowGravityEnabled;
+        private static bool lowGravityDisabled;
 
         public static void ToggleLowGravity()
         {
             lowGravityEnabled = !lowGravityEnabled;
+            lowGravityDisabled = !lowGravityDisabled;
 
             if (lowGravityEnabled)
             {
                 SetPlayerGravity(2.5f);
                 Debug.Log("Low Gravity Enabled");
             }
-            else
+            else (lowGravityDisabled) = true;
+            
+            if (lowGravityDisabled)
             {
-                SetPlayerGravity(9.81f);
-                Debug.Log("Low Gravity Disabled");
+
+                    SetPlayerGravity(9.81f);
+                    Debug.Log("Low Gravity Disabled");
+                }
             }
-        }
+        
 
         private static void SetPlayerGravity(float gravity)
         {
