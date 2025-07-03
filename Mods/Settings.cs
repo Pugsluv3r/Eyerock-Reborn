@@ -1,5 +1,5 @@
-﻿using static eyerock.Menu.Main;
-using static eyerock.Settings;
+﻿using static eyerockreborn.Menu.Main;
+using static eyerockreborn.Settings;
 
 namespace eyerockreborn.Mods
 {

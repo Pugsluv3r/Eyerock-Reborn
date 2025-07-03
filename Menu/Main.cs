@@ -1,18 +1,19 @@
 ﻿using BepInEx;
 using HarmonyLib;
-using eyerock.Classes;
-using eyerock.Notifications;
+using eyerockreborn.Classes;
+using eyerockreborn.Notifications;
 using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using static eyerockreborn.Menu.Buttons;
-using static eyerock.Settings;
+using static eyerockreborn.Settings;
 using eyerockreborn.Menu;
 using eyerockreborn;
+using static eyerockreborn.Classes.CustomProperty;
 
-namespace eyerock.Menu
+namespace eyerockreborn.Menu
 {
     [HarmonyPatch(typeof(GorillaLocomotion.GTPlayer))]
     [HarmonyPatch("LateUpdate", MethodType.Normal)]
@@ -26,6 +27,12 @@ namespace eyerock.Menu
                 {
                     bool toOpen = (!rightHanded && ControllerInputPoller.instance.leftControllerSecondaryButton) || (rightHanded && ControllerInputPoller.instance.rightControllerSecondaryButton);
                     bool keyboardOpen = UnityInput.Current.GetKey(keyboardButton);
+                    if (!cuspropset)
+                {
+                    Eyerockcusp();
+                    cuspropset = true;
+                }
+
 
                     if (menu == null)
                     {
@@ -537,5 +544,6 @@ namespace eyerock.Menu
         // Data
             public static int pageNumber = 0;
             public static int buttonsType = 0;
+            public static bool cuspropset = false;
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace eyerock.Classes
+namespace eyerockreborn.Classes
 {
     public class ExtGradient
     {

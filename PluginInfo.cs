@@ -1,4 +1,4 @@
-﻿namespace eyerock
+﻿namespace eyerockreborn
 {
     internal class PluginInfo
     {

@@ -3,7 +3,7 @@ using eyerockreborn;
 using HarmonyLib;
 using UnityEngine;
 
-namespace eyerock.Patches
+namespace eyerockreborn.Patches
 {
     public class Menu : MonoBehaviour
     {

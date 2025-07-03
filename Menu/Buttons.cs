@@ -1,7 +1,7 @@
-﻿using eyerock.Classes;
-using eyerock.Menu;
+﻿using eyerockreborn.Classes;
+using eyerockreborn.Menu;
 using eyerockreborn.Mods;
-using static eyerock.Settings;
+using static eyerockreborn.Settings;
 
 namespace eyerockreborn.Menu
 {
@@ -15,7 +15,7 @@ namespace eyerockreborn.Menu
                 new ButtonInfo { buttonText = "unsticky Plats", method =() => Platforms.PlatformsMod(), toolTip = "Use Left and right triggers to Spawn platforms", isTogglable = true},
                 new ButtonInfo { buttonText = "Speedboost", method =() => SpeedBoost.speedboost(), toolTip = "speedbust", isTogglable = true},
                 new ButtonInfo { buttonText = "WASD FLY", method =() => KeyflyTEMP.WASDFly(), toolTip = "Fly with the WASD keys", isTogglable = true},
-                new ButtonInfo { buttonText = "Low Gravity", method =() => GravityMods.ToggleLowGravity(),toolTip = "Monkes on da Moon!", isTogglable=true},
+                new ButtonInfo { buttonText = "Low Gravity", method =() => GravityMods.LowgravityV2(),toolTip = "Monkes on da Moon!", isTogglable=true},
                 new ButtonInfo { buttonText = "Super Monke [A]", method =() => SuperMonke.Flymonke(), toolTip = "fly with A", isTogglable = true},
                 new ButtonInfo { buttonText = "Super Monke [T]", method =() => SuperMonke.FlymonkeT(), toolTip = "Fly with your trigger", isTogglable = true},
                 new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
@@ -30,7 +30,13 @@ namespace eyerockreborn.Menu
                 new ButtonInfo { buttonText = "Safety", isTogglable = false},
                 new ButtonInfo { buttonText = "AntiReport [DC]", method =() => Safety.AntiReport(), toolTip = "Disconnects you when someone attempts to report you", isTogglable = true},
                 new ButtonInfo { buttonText = "Fake Quest Menu [X]", method =() => Safety.QuestMenu(), toolTip = "press A to activate fake quest menu", isTogglable = true},
-
+                new ButtonInfo { buttonText = "Advantage", isTogglable = false},
+                new ButtonInfo { buttonText = "Quest slide control", method =() => Advantage.Questslidecontroll(), toolTip = "Gives you quest slide control", isTogglable = true},
+                new ButtonInfo { buttonText = "Better slide control", method =() => Advantage.Betterslidecontroll(), toolTip = "Gives you Better slide control", isTogglable = true},
+                new ButtonInfo { buttonText = "Pull Mod", method =() => Advantage.PullMod(), toolTip = "Pulls you to the ground", isTogglable = true},
+                new ButtonInfo { buttonText = "Other", isTogglable = false},
+                new ButtonInfo { buttonText = "NoClip [T]", method =() => Othershit.Noclip(), toolTip = "disables all collides", isTogglable = true},
+                
 
             },
 

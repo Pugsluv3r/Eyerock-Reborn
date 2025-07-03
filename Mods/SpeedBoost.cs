@@ -11,7 +11,7 @@ namespace eyerockreborn.Mods
         public static void speedboost()
         {
             GorillaLocomotion.GTPlayer.Instance.maxJumpSpeed = 7f;
-            GorillaLocomotion.GTPlayer.Instance.jumpMultiplier = 1.2f;
+            GorillaLocomotion.GTPlayer.Instance.jumpMultiplier = 1.45f;
         }
     }
 }

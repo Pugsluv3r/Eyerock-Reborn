@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace eyerock.Classes
+namespace eyerockreborn.Classes
 {
     public class TimedBehaviour : MonoBehaviour
     {

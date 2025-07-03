@@ -1,12 +1,12 @@
 ﻿using HarmonyLib;
-using eyerock.Notifications;
+using eyerockreborn.Notifications;
 using Photon.Pun;
 using Photon.Realtime;
 using System.IO;
 using UnityEngine;
-using static eyerock.Menu.Main;
+using static eyerockreborn.Menu.Main;
 
-namespace eyerock.Patches
+namespace eyerockreborn.Patches
 {
     [HarmonyPatch(typeof(MonoBehaviourPunCallbacks), "OnPlayerLeftRoom")]
     internal class LeavePatch : MonoBehaviour

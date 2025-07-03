@@ -4,7 +4,7 @@ using BepInEx;
 using HarmonyLib;
 using UnityEngine;
 
-namespace eyerock.Classes
+namespace eyerockreborn.Classes
 {
     internal class RigManager : BaseUnityPlugin
     {

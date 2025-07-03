@@ -9,14 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Classes\EyerockRebornIMG.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Classes\EyerockRebornIMG.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
     </Reference>

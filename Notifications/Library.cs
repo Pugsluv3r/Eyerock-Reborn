@@ -3,9 +3,9 @@ using System.Linq;
 using BepInEx;
 using UnityEngine;
 using UnityEngine.UI;
-using static eyerock.Settings;
+using static eyerockreborn.Settings;
 
-namespace eyerock.Notifications
+namespace eyerockreborn.Notifications
 {
     [BepInPlugin("org.gorillatag.lars.notifications2", "NotificationLibrary", "1.0.5")]
     public class NotifiLib : BaseUnityPlugin

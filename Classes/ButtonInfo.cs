@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eyerock.Classes
+namespace eyerockreborn.Classes
 {
     public class ButtonInfo
     {

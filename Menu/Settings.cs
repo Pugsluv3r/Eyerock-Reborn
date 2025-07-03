@@ -1,8 +1,8 @@
-﻿using eyerock.Classes;
+﻿using eyerockreborn.Classes;
 using UnityEngine;
-using static eyerock.Menu.Main;
+using static eyerockreborn.Menu.Main;
 
-namespace eyerock
+namespace eyerockreborn
 {
     internal class Settings
     {

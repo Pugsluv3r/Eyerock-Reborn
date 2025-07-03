@@ -1,4 +1,4 @@
-﻿using static eyerock.Menu.Main;
+﻿using static eyerockreborn.Menu.Main;
 
 namespace eyerockreborn.Mods
 {

@@ -1,9 +1,9 @@
 using Photon.Pun;
 using UnityEngine;
-using static eyerock.Menu.Main;
-using static eyerock.Settings;
+using static eyerockreborn.Menu.Main;
+using static eyerockreborn.Settings;
 
-namespace eyerock.Classes
+namespace eyerockreborn.Classes
 {
 	internal class Button : MonoBehaviour
 	{

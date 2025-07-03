@@ -1,10 +1,10 @@
 ﻿using BepInEx;
 using System.ComponentModel;
 
-namespace eyerock.Patches
+namespace eyerockreborn.Patches
 {
-    [Description(eyerock.PluginInfo.Description)]
-    [BepInPlugin(eyerock.PluginInfo.GUID, eyerock.PluginInfo.Name, eyerock.PluginInfo.Version)]
+    [Description(eyerockreborn.PluginInfo.Description)]
+    [BepInPlugin(eyerockreborn.PluginInfo.GUID, eyerockreborn.PluginInfo.Name, eyerockreborn.PluginInfo.Version)]
     public class HarmonyPatches : BaseUnityPlugin
     {
         private void OnEnable()
