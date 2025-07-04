@@ -36,7 +36,7 @@ namespace eyerockreborn.Classes
                 // Configure text appearance
                 textStyle = new GUIStyle
                 {
-                    fontSize = 32,
+                    fontSize = 24,
                     fontStyle = FontStyle.Bold,
                     alignment = TextAnchor.UpperCenter
                 };
@@ -46,7 +46,7 @@ namespace eyerockreborn.Classes
             void OnGUI()
             {
                 // Draw the text at top-center of the screen
-                GUI.Label(new Rect(Screen.width / 2 - 150, 20, 300, 50), "Eyerock Reborn", textStyle);
+                GUI.Label(new Rect(Screen.width / 2 - 150, 20, 300, 50), "Eyerock Reborn 1.3.1", textStyle);
             }
         }
     }

@@ -37,6 +37,7 @@ namespace eyerockreborn.Menu
                 new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
                 new ButtonInfo { buttonText = "Pull Mod", method =() => Advantage.PullMod(), toolTip = "Pulls you to the ground", isTogglable = true},
                 new ButtonInfo { buttonText = "Other", isTogglable = false},
+                new ButtonInfo { buttonText = "Join The Discord!", method =() => Othershit.Joindiscord(), toolTip = "Joins the eyerock reborn discord", isTogglable = false},
                 new ButtonInfo { buttonText = "NoClip [T]", method =() => Othershit.Noclip(), toolTip = "disables all collides", isTogglable = true},
                 new ButtonInfo { buttonText = "TP to City", method =() => Othershit.Tptocityload(), toolTip = "TPs you to city on click", isTogglable = false},
                 new ButtonInfo { buttonText = "TP to Beach", method =() => Othershit.Tptobeachload(), toolTip = "TPs you to beach on click", isTogglable = false},
