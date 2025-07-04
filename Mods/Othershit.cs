@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GorillaLocomotion;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
@@ -16,6 +17,22 @@ namespace eyerockreborn.Mods
             {
                 collider.enabled = !NoCollide;
             }
+        }
+        public static void Tptobeachload()
+        {
+
+
+            Vector3 targetPosition = new Vector3(-14.0499f, 1.5595f, -68.6916f);
+            Quaternion targetRotation = Quaternion.identity;
+            GTPlayer.Instance.TeleportTo(targetPosition, targetRotation);
+        }
+        public static void Tptocityload()
+        {
+
+
+            Vector3 targetPosition = new Vector3(-63.6591f, 13.5011f, -93.3268f);
+            Quaternion targetRotation = Quaternion.identity;
+            GTPlayer.Instance.TeleportTo(targetPosition, targetRotation);
         }
     }
 }

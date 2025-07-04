@@ -13,7 +13,7 @@ namespace eyerockreborn.Mods
     {
         public static void Questslidecontroll()
         {
-            GTPlayer.Instance.slideControl = 0.43f;
+            GTPlayer.Instance.slideControl = 0.23f;
         }
         public static void Betterslidecontroll()
         {

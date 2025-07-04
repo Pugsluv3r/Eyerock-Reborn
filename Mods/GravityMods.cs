@@ -14,7 +14,7 @@ namespace eyerockreborn.Mods
         public static void LowgravityV2()
         {
             
-            GorillaTagger.Instance.rigidbody.AddForce(new Vector3(0, 4.8f, 0), ForceMode.Force);
+            GorillaTagger.Instance.rigidbody.AddForce(new Vector3(0, 1.7f, 0), ForceMode.Impulse);
         }
     }
 }

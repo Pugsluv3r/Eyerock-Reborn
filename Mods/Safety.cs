@@ -14,7 +14,7 @@ namespace eyerockreborn.Mods
             NetworkSystem.Instance.ReturnToSinglePlayer();
         }
 
-        public static float threshold = 0.55f;
+        public static float threshold = 0.45f;
 
         public static float Thing1 { get; private set; }
         public static float Thing2 { get; private set; }
@@ -50,7 +50,7 @@ namespace eyerockreborn.Mods
             }
         }
 
-         
+
         public static void QuestMenu()
         {
             if (ControllerInputPoller.instance.leftControllerPrimaryButton)
@@ -76,5 +76,13 @@ namespace eyerockreborn.Mods
                 }
             }
         }
+        public static void ReturnTostump()
+        {
+            
+            Vector3 targetPosition = new Vector3(-66.9039f, 11.8661f, -82.1227f);
+            Quaternion targetRotation = Quaternion.identity;
+            GTPlayer.Instance.TeleportTo(targetPosition, targetRotation);
+        }
+        
     }
 }
