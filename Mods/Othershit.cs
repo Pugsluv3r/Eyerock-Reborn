@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using System.Threading;
 using UnityEngine;
 
 namespace eyerockreborn.Mods
@@ -38,7 +39,22 @@ namespace eyerockreborn.Mods
         {
             Process.Start(serverlink);
         }
-
         public static string serverlink = "https://discord.gg/GX7TS9FTfn";
+
+        public static float Prevtime;
+        public static void Fpscapper(int fps)
+        {
+            float targetDelta = 1f / fps;
+            float elapsed = Time.realtimeSinceStartup - Prevtime;
+
+            if (elapsed < targetDelta)
+            {
+                int sleepMs = Mathf.FloorToInt((targetDelta - elapsed) * 1000);
+                if (sleepMs > 0) 
+                 Thread.Sleep(sleepMs);
+            }
+           Prevtime = Time.realtimeSinceStartup;
+        }
+
     }
 }

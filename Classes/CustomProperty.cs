@@ -11,7 +11,7 @@ namespace eyerockreborn.Classes
     {
         public static void Eyerockcusp()
         {
-            Eyerock["Eyerock Reborn 1.3.1"] = "";
+            Eyerock["Eyerock Reborn 1.3.2"] = "";
             PhotonNetwork.SetPlayerCustomProperties(Eyerock);
         }
         private static ExitGames.Client.Photon.Hashtable Eyerock = PhotonNetwork.LocalPlayer.CustomProperties;

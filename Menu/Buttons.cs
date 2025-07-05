@@ -41,6 +41,7 @@ namespace eyerockreborn.Menu
                 new ButtonInfo { buttonText = "NoClip [T]", method =() => Othershit.Noclip(), toolTip = "disables all collides", isTogglable = true},
                 new ButtonInfo { buttonText = "TP to City", method =() => Othershit.Tptocityload(), toolTip = "TPs you to city on click", isTogglable = false},
                 new ButtonInfo { buttonText = "TP to Beach", method =() => Othershit.Tptobeachload(), toolTip = "TPs you to beach on click", isTogglable = false},
+                new ButtonInfo { buttonText = "Quest FPS cap", method =() => Othershit.Fpscapper(72), toolTip = "Caps your fps at 60", isTogglable = true},
 
 
             },
