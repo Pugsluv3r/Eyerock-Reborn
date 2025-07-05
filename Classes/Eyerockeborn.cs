@@ -46,7 +46,7 @@ namespace eyerockreborn.Classes
             void OnGUI()
             {
                 // Draw the text at top-center of the screen
-                GUI.Label(new Rect(Screen.width / 2 - 150, 20, 300, 50), "Eyerock Reborn 1.3.2", textStyle);
+                GUI.Label(new Rect(Screen.width / 2 - 150, 20, 300, 50), "Eyerock Reborn 1.3.3", textStyle);
             }
         }
     }

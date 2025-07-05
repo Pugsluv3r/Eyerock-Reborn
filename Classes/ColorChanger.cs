@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 namespace eyerockreborn.Classes
 {
     public class ColorChanger : TimedBehaviour
@@ -22,7 +23,7 @@ namespace eyerockreborn.Classes
                     if (colorInfo.isRainbow)
                     {
                         float h = (Time.frameCount / 180f) % 1f;
-                        color = Color.black;
+                        color = new Color(61f / 255f, 22f / 255f, 67f / 255f);
                     }
                     renderer.material.color = color;
                 }

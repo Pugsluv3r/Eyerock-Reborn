@@ -6,11 +6,11 @@ namespace eyerockreborn
 {
     internal class Settings
     {
-        public static ExtGradient backgroundColor = new ExtGradient{isRainbow = true};
+        public static ExtGradient backgroundColor = new ExtGradient { isRainbow = true };
         public static ExtGradient[] buttonColors = new ExtGradient[]
         {
-            new ExtGradient{colors = GetSolidGradient(Color.black) }, // Disabled
-            new ExtGradient{colors = GetSolidGradient(Color.red)} // Enabled
+                new ExtGradient{colors = GetSolidGradient(Color.black)}, // Disabled
+                new ExtGradient{colors = GetSolidGradient(Color.blue)} // Enabled
         };
         public static Color[] textColors = new Color[]
         {

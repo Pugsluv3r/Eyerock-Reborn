@@ -32,9 +32,9 @@ namespace eyerockreborn.Menu
                     Eyerockcusp();
                     cuspropset = true;
                 }
+                
 
-
-                    if (menu == null)
+                if (menu == null)
                     {
                         if (toOpen || keyboardOpen)
                         {
@@ -161,7 +161,7 @@ namespace eyerockreborn.Menu
                 text.fontSize = 1;
                 text.color = textColors[0];
                 text.supportRichText = true;
-                text.fontStyle = FontStyle.Italic;
+                text.fontStyle = FontStyle.Normal;
                 text.alignment = TextAnchor.MiddleCenter;
                 text.resizeTextForBestFit = true;
                 text.resizeTextMinSize = 0;
@@ -198,8 +198,8 @@ namespace eyerockreborn.Menu
                 }
 
             // Buttons
-                // Disconnect
-                    
+                
+                
 
                 // Page Buttons
                     GameObject gameObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -545,5 +545,6 @@ namespace eyerockreborn.Menu
             public static int pageNumber = 0;
             public static int buttonsType = 0;
             public static bool cuspropset = false;
+        private static bool oninitialize;
     }
 }
