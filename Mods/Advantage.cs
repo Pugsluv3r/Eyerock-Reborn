@@ -22,7 +22,7 @@ namespace eyerockreborn.Mods
         public static void PullMod()
         {
             
-            GorillaTagger.Instance.rigidbody.AddForce(new Vector3(0, -1.04f, 0), ForceMode.VelocityChange);
+            GorillaTagger.Instance.rigidbody.AddForce(new Vector3(0.02f, 0f, 0.02f), ForceMode.Impulse);
         }
         public static void FlickGun()
         {

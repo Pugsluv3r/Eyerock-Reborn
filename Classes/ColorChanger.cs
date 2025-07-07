@@ -22,7 +22,7 @@ namespace eyerockreborn.Classes
                     Color color = new Gradient { colorKeys = colorInfo.colors }.Evaluate((Time.time / 2f) % 1);
                     if (colorInfo.isRainbow)
                     {
-                        float h = (Time.frameCount / 180f) % 1f;
+                        float m = (Time.frameCount / 180f) % 1f;
                         color = new Color(61f / 255f, 22f / 255f, 67f / 255f);
                     }
                     renderer.material.color = color;

@@ -35,14 +35,17 @@ namespace eyerockreborn.Menu
                 new ButtonInfo { buttonText = "Quest slide control", method =() => Advantage.Questslidecontroll(), toolTip = "Gives you quest slide control", isTogglable = true},
                 new ButtonInfo { buttonText = "Better slide control", method =() => Advantage.Betterslidecontroll(), toolTip = "Gives you Better slide control", isTogglable = true},
                 new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
-                new ButtonInfo { buttonText = "Pull Mod", method =() => Advantage.PullMod(), toolTip = "Pulls you to the ground", isTogglable = true},
+                new ButtonInfo { buttonText = "Pull Mod", method =() => Advantage.PullMod(), toolTip = "Basic Pull Mod", isTogglable = true},
+                new ButtonInfo { buttonText = "Overpowered", isTogglable = false},
+                new ButtonInfo { buttonText = "Lag All", method =() => Overpowered.LagAll(10, 2f), toolTip = "Lags everyone on META", isTogglable = true},
+                new ButtonInfo { buttonText = "uncap RPC", method =() => RPCprotection.RPCProt(), toolTip = "Self explanitory", isTogglable = true},
                 new ButtonInfo { buttonText = "Other", isTogglable = false},
                 new ButtonInfo { buttonText = "Join The Discord!", method =() => Othershit.Joindiscord(), toolTip = "Joins the eyerock reborn discord", isTogglable = false},
                 new ButtonInfo { buttonText = "NoClip [T]", method =() => Othershit.Noclip(), toolTip = "disables all collides", isTogglable = true},
+                new ButtonInfo { buttonText = "LEAVE", method =() => Safety.Disconnect(), toolTip = "Lobby Left", isTogglable = false},
                 new ButtonInfo { buttonText = "TP to City", method =() => Othershit.Tptocityload(), toolTip = "TPs you to city on click", isTogglable = false},
                 new ButtonInfo { buttonText = "TP to Beach", method =() => Othershit.Tptobeachload(), toolTip = "TPs you to beach on click", isTogglable = false},
                 new ButtonInfo { buttonText = "Quest FPS cap", method =() => Othershit.Fpscapper(72), toolTip = "Caps your fps at 60", isTogglable = true},
-
 
             },
 
